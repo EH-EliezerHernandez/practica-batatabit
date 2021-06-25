@@ -1,0 +1,96 @@
+:root {
+  /* colors */
+  --just-white: #ffffff;
+  --soft-orange: #ffe9d5;
+  --warm-black: #201e1c;
+  /* Fonts */
+  --fuente-principal: "DM Sans", sans-serif;
+  --fuente-secundaria: "Inter", sans-serif;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  font-family: var(--fuente-principal);
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+/*header*/
+.header {
+  position: relative;
+  padding-block-start: 60px;
+  padding-block-end: 50px;
+  min-height: 336px;
+  min-width: 320px;
+  text-align: center;
+  background-image: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
+}
+.header__contenido {
+  width: 95%;
+  max-width: 500px;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.header__contenedor-logo {
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  width: max-content;
+}
+.logo__batatabit {
+  width: 151px;
+  height: 24px;
+}
+.header__tittle {
+  margin-block-start: 40px;
+  line-height: 2.6rem;
+  font-size: 2.4rem;
+  color: var(--just-white);
+}
+.header__description {
+  margin-block-start: 25px;
+  color: var(--soft-orange);
+}
+.buttom-planes {
+  position: absolute;
+  bottom: -18px;
+  transform: translate(-50%);
+  display: inline-block;
+  min-width: 230px;
+  padding-block-start: 15px;
+  padding-block-end: 15px;
+  padding-inline-start: 15px;
+  padding-inline-end: 15px;
+  font-weight: 700;
+  color: var(--warm-black);
+  text-decoration: none;
+  background-color: #faf8f7;
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+.icon-arrow-down {
+  display: inline-block;
+  margin-inline-start: 10px;
+  width: 12px;
+  height: 7px;
+  background-image: url(../assets/icons/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
