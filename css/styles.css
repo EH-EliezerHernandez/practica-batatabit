@@ -7,6 +7,7 @@
   --bitcoin-orange: #ff9536;
   --secundary-blue: #1a9af7;
   --soft-blue: #e7f5ff;
+  --warm-black-soft: #282623;
   /* Fonts */
   --fuente-principal: "DM Sans", sans-serif;
   --fuente-secundaria: "Inter", sans-serif;
@@ -74,6 +75,7 @@ h3 {
 .buttom-planes {
   display: inline-block;
   position: absolute;
+  left: 50%;
   bottom: -18px;
   min-width: 230px;
   padding-block-start: 15px;
@@ -218,4 +220,64 @@ h3 {
 }
 .tasas__update-label {
   font-weight: 700;
+}
+/* servicios */
+.servicios {
+  position: relative;
+  background-color: var(--warm-black);
+  min-width: 320px;
+}
+.icono-batatabit {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translate(-50%);
+  height: 24px;
+  width: 41px;
+  background-image: url(../assets/icons/batatabit.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.servicios__contenido {
+  width: 90%;
+  max-width: 900px;
+  padding-block-start: 70px;
+  padding-block-end: 36px;
+  margin: 0;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  text-align: center;
+}
+.servicios__tittle {
+  color: var(--just-white);
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+}
+.servicios__description {
+  margin-block-start: 26px;
+  color: #808080;
+}
+.servicios__conteiner {
+  margin-block-start: 36px;
+}
+.servicios__caracteristica {
+  padding: 16px;
+  margin-block-end: 16px;
+  background-color: var(--warm-black-soft);
+  text-align: left;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+}
+.servicios__icon {
+  color: var(--just-white);
+}
+.servicios__caracteristica-tittle {
+  margin-block-start: 8px;
+  color: var(--just-white);
+  font-size: 1.8rem;
+}
+.servicios__caracteristica-descripcion {
+  margin-block-start: 8px;
+  color: #808080;
 }
