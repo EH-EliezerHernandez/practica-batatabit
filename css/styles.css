@@ -281,3 +281,36 @@ h3 {
   margin-block-start: 8px;
   color: #808080;
 }
+/* planes */
+.planes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  text-align: center;
+}
+.planes__text {
+  width: 90%;
+}
+.planes__tittle {
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  color: var(--warm-black);
+}
+.planes__description {
+  color: #757575;
+}
+.planes__price {
+  font-family: var(--fuente-secundaria);
+  font-size: 5.2rem;
+  line-height: 4rem;
+  font-weight: 700;
+}
+.planes__sign-dollar {
+  display: inline-block;
+  margin-inline-end: 5px;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  vertical-align: top;
+}
