@@ -3,6 +3,10 @@
   --just-white: #ffffff;
   --soft-orange: #ffe9d5;
   --warm-black: #201e1c;
+  --off-white: #faf8f7;
+  --bitcoin-orange: #ff9536;
+  --secundary-blue: #1a9af7;
+  --soft-blue: #e7f5ff;
   /* Fonts */
   --fuente-principal: "DM Sans", sans-serif;
   --fuente-secundaria: "Inter", sans-serif;
@@ -93,4 +97,125 @@ h3 {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+/* tasas cambio */
+.tasas-cambio {
+  background-color: var(--off-white);
+}
+.tasas__contenedor {
+  padding-block-start: 55px;
+  padding-block-end: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  margin: auto;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  text-align: center;
+}
+.tasas-cambio__background-bitcoin {
+  height: 192px;
+  width: 192px;
+  background-image: url(../assets/img/Bitcoin.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.tasas-cambio__tittle {
+  margin-block-start: 35px;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  color: var(--warm-black);
+}
+.tasas-cambio__description {
+  color: #757575;
+  margin-block-start: 25px;
+}
+.tasas {
+  margin-block-start: 50px;
+  text-align: left;
+}
+.tasas__tittle {
+  padding-inline-start: 16px;
+  font-size: 1.8rem;
+  line-height: 2.34rem;
+}
+.tasas__tittle--orange {
+  color: var(--bitcoin-orange);
+}
+.tasas__tittle--blue {
+  color: var(--secundary-blue);
+}
+.tasas__table {
+  margin-block-start: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: var(--just-white);
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+.tasas__table p {
+  padding: 12px;
+  padding-inline-start: 14px;
+  padding-inline-end: 14px;
+  /* Border bottom */
+  border-block-end-width: 1px;
+  border-block-end-color: var(--off-white);
+  border-block-end-style: solid;
+  /* Border right */
+  border-inline-end-width: 1px;
+  border-inline-end-color: var(--off-white);
+  border-inline-end-style: solid;
+  /* fonts */
+  font-family: var(--fuente-secundaria);
+  line-height: 1.9rem;
+  font-size: 1.6rem;
+  color: #b5b0ac;
+}
+.tasas__table p:nth-last-child(1) {
+  border: none;
+}
+.tasas__table p:nth-last-child(2) {
+  border-block-end: none;
+}
+.tasas__label + p {
+  color: #757575;
+  font-weight: 400;
+}
+.tasas__icon {
+  display: inline-block;
+  margin-inline-start: 10px;
+  height: 12px;
+  width: 12px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.tasas__icon--down {
+  background-image: url(../assets/icons/price-action-down.png);
+}
+.tasas__icon--up {
+  background-image: url(../assets/icons/price-action-up.png);
+}
+.tasas__update {
+  width: max-content;
+  margin: auto;
+  margin-block-end: 0;
+  margin-block-start: 20px;
+  padding: 10px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
+
+  text-align: center;
+  border-radius: 8px;
+}
+.tasas__update--orange {
+  background-color: var(--soft-orange);
+}
+.tasas__update--blue {
+  background-color: var(--soft-blue);
+}
+.tasas__update-label {
+  font-weight: 700;
 }
