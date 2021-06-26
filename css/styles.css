@@ -3,6 +3,9 @@
   --just-white: #ffffff;
   --soft-orange: #ffe9d5;
   --warm-black: #201e1c;
+  --off-white: #faf8f7;
+  --bitcoin-orange: #ff9536;
+  --secundary-blue: #1a9af7;
   /* Fonts */
   --fuente-principal: "DM Sans", sans-serif;
   --fuente-secundaria: "Inter", sans-serif;
@@ -93,4 +96,58 @@ h3 {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+/* tasas cambio */
+.tasas-cambio {
+  background-color: var(--off-white);
+}
+.tasas__contenedor {
+  padding-block-start: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  margin: auto;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  text-align: center;
+}
+.tasas-cambio__background-bitcoin {
+  height: 192px;
+  width: 192px;
+  background-image: url(../assets/img/Bitcoin.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.tasas-cambio__tittle {
+  margin-block-start: 35px;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  color: var(--warm-black);
+}
+.tasas-cambio__description {
+  color: #757575;
+  margin-block-start: 25px;
+}
+.tasas {
+  margin-block-start: 50px;
+  text-align: left;
+}
+.tasas__tittle {
+  padding-inline-start: 10px;
+  font-size: 1.8rem;
+  line-height: 2.34rem;
+}
+.tasas__tittle--orange {
+  color: var(--bitcoin-orange);
+}
+.tasas__tittle--blue {
+  color: var(--secundary-blue);
+}
+.tasas__table {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: var(--just-white);
+  border-radius: 8px;
 }
