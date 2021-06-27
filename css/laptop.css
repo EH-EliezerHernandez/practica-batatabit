@@ -1,0 +1,7 @@
+/* Planes */
+.planes__card:first-of-type {
+  margin-inline-start: auto;
+}
+.planes__card:last-of-type {
+  margin-inline-end: auto;
+}
