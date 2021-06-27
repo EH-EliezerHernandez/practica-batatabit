@@ -285,9 +285,12 @@ h3 {
 .planes {
   display: flex;
   flex-direction: column;
-  align-items: center;
   min-width: 320px;
+  padding-block-start: 50px;
+  padding-block-end: 50px;
+  align-items: center;
   text-align: center;
+  background-color: var(--off-white);
 }
 .planes__text {
   width: 90%;
@@ -298,9 +301,61 @@ h3 {
   color: var(--warm-black);
 }
 .planes__description {
+  margin-block-start: 20px;
   color: #757575;
 }
+.planes__conteiner-cards {
+  width: 100%;
+  margin-block-start: 20px;
+  padding-block-start: 15px;
+  padding-block-end: 15px;
+  overflow: auto;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+}
+.planes__card {
+  position: relative;
+  display: inline-block;
+  width: 56%;
+  max-width: 280px;
+  margin-inline-end: 6px;
+  padding: 12px;
+  padding-block-end: 20px;
+  padding-block-start: 30px;
+  white-space: normal;
+  background-color: var(--just-white);
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  scroll-snap-align: center;
+}
+
+.planes__card:first-of-type {
+  margin-inline-start: 50%;
+}
+.planes__card:last-of-type {
+  margin-inline-end: 50%;
+}
+.planes__recomendado {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  padding: 6px;
+  font-family: var(--fuente-secundaria);
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  border-radius: 8px;
+  color: var(--just-white);
+  transform: translate(-50%);
+  background-color: var(--bitcoin-orange);
+}
+.planes__card-tittle {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 500;
+}
 .planes__price {
+  margin-block-start: 16px;
   font-family: var(--fuente-secundaria);
   font-size: 5.2rem;
   line-height: 4rem;
@@ -313,4 +368,29 @@ h3 {
   line-height: 1.5rem;
   font-weight: 400;
   vertical-align: top;
+}
+.planes__card-description {
+  margin-block-start: 14px;
+  color: #757575;
+  font-size: 1.2rem;
+}
+.planes__buttom {
+  padding: 16px;
+  margin-block-start: 16px;
+  padding-block-start: 14px;
+  padding-block-end: 14px;
+  font-weight: 700;
+  background-color: #faf8f7;
+  border: 2px solid var(--bitcoin-orange);
+  border-radius: 4px;
+}
+.arrow-right {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  background-image: url(../assets/icons/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  vertical-align: middle;
 }
