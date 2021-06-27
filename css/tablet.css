@@ -1,3 +1,10 @@
+/* Tasas de cambio */
+.tasas__contenedor-tables {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 40px;
+}
+/* Servicios */
 .servicios__conteiner {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
