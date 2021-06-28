@@ -240,7 +240,7 @@ h3 {
   background-position: center center;
 }
 .servicios__contenido {
-  width: 90%;
+  width: 95%;
   max-width: 900px;
   padding-block-start: 70px;
   padding-block-end: 36px;
@@ -293,7 +293,7 @@ h3 {
   background-color: var(--off-white);
 }
 .planes__text {
-  width: 90%;
+  width: 95%;
 }
 .planes__tittle {
   font-size: 2.4rem;
@@ -317,7 +317,7 @@ h3 {
   position: relative;
   display: inline-block;
   width: 56%;
-  max-width: 280px;
+  max-width: 255px;
   margin-inline-end: 6px;
   padding: 12px;
   padding-block-end: 20px;
