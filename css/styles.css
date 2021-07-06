@@ -1,0 +1,396 @@
+:root {
+  /* colors */
+  --just-white: #ffffff;
+  --soft-orange: #ffe9d5;
+  --warm-black: #201e1c;
+  --off-white: #faf8f7;
+  --bitcoin-orange: #ff9536;
+  --secundary-blue: #1a9af7;
+  --soft-blue: #e7f5ff;
+  --warm-black-soft: #282623;
+  /* Fonts */
+  --fuente-principal: "DM Sans", sans-serif;
+  --fuente-secundaria: "Inter", sans-serif;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  font-family: var(--fuente-principal);
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+/*header*/
+.header {
+  position: relative;
+  padding-block-start: 60px;
+  padding-block-end: 50px;
+  min-height: 336px;
+  min-width: 320px;
+  text-align: center;
+  background-image: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
+}
+.header__contenido {
+  width: 95%;
+  max-width: 500px;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.header__contenedor-logo {
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  width: max-content;
+}
+.logo__batatabit {
+  width: 151px;
+  height: 24px;
+}
+.header__tittle {
+  margin-block-start: 40px;
+  line-height: 2.6rem;
+  font-size: 2.4rem;
+  color: var(--just-white);
+}
+.header__description {
+  margin-block-start: 25px;
+  color: var(--soft-orange);
+}
+.buttom-planes {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  bottom: -18px;
+  min-width: 230px;
+  padding-block-start: 15px;
+  padding-block-end: 15px;
+  padding-inline-start: 15px;
+  padding-inline-end: 15px;
+  transform: translate(-50%);
+  font-weight: 700;
+  color: var(--warm-black);
+  text-decoration: none;
+  background-color: #faf8f7;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  border-radius: 4px;
+}
+.icon-arrow-down {
+  display: inline-block;
+  margin-inline-start: 10px;
+  width: 12px;
+  height: 7px;
+  background-image: url(../assets/icons/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+/* tasas cambio */
+.tasas-cambio {
+  background-color: var(--off-white);
+}
+.tasas__contenedor {
+  padding-block-start: 55px;
+  padding-block-end: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  margin: auto;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  text-align: center;
+}
+.tasas-cambio__background-bitcoin {
+  height: 192px;
+  width: 192px;
+  background-image: url(../assets/img/Bitcoin.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.tasas-cambio__tittle {
+  margin-block-start: 35px;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  color: var(--warm-black);
+}
+.tasas-cambio__description {
+  color: #757575;
+  margin-block-start: 25px;
+}
+.tasas {
+  margin-block-start: 50px;
+  text-align: left;
+}
+.tasas__tittle {
+  padding-inline-start: 16px;
+  font-size: 1.8rem;
+  line-height: 2.34rem;
+}
+.tasas__tittle--orange {
+  color: var(--bitcoin-orange);
+}
+.tasas__tittle--blue {
+  color: var(--secundary-blue);
+}
+.tasas__table {
+  margin-block-start: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: var(--just-white);
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+.tasas__table p {
+  padding: 12px;
+  padding-inline-start: 14px;
+  padding-inline-end: 14px;
+  /* Border bottom */
+  border-block-end-width: 1px;
+  border-block-end-color: var(--off-white);
+  border-block-end-style: solid;
+  /* Border right */
+  border-inline-end-width: 1px;
+  border-inline-end-color: var(--off-white);
+  border-inline-end-style: solid;
+  /* fonts */
+  font-family: var(--fuente-secundaria);
+  line-height: 1.9rem;
+  font-size: 1.6rem;
+  color: #b5b0ac;
+}
+.tasas__table p:nth-last-child(1) {
+  border: none;
+}
+.tasas__table p:nth-last-child(2) {
+  border-block-end: none;
+}
+.tasas__label + p {
+  color: #757575;
+  font-weight: 400;
+}
+.tasas__icon {
+  display: inline-block;
+  margin-inline-start: 10px;
+  height: 12px;
+  width: 12px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.tasas__icon--down {
+  background-image: url(../assets/icons/price-action-down.png);
+}
+.tasas__icon--up {
+  background-image: url(../assets/icons/price-action-up.png);
+}
+.tasas__update {
+  width: max-content;
+  margin: auto;
+  margin-block-end: 0;
+  margin-block-start: 20px;
+  padding: 10px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
+
+  text-align: center;
+  border-radius: 8px;
+}
+.tasas__update--orange {
+  background-color: var(--soft-orange);
+}
+.tasas__update--blue {
+  background-color: var(--soft-blue);
+}
+.tasas__update-label {
+  font-weight: 700;
+}
+/* servicios */
+.servicios {
+  position: relative;
+  background-color: var(--warm-black);
+  min-width: 320px;
+}
+.icono-batatabit {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translate(-50%);
+  height: 24px;
+  width: 41px;
+  background-image: url(../assets/icons/batatabit.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.servicios__contenido {
+  width: 95%;
+  max-width: 900px;
+  padding-block-start: 70px;
+  padding-block-end: 36px;
+  margin: 0;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  text-align: center;
+}
+.servicios__tittle {
+  color: var(--just-white);
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+}
+.servicios__description {
+  margin-block-start: 26px;
+  color: #808080;
+}
+.servicios__conteiner {
+  margin-block-start: 36px;
+}
+.servicios__caracteristica {
+  padding: 16px;
+  margin-block-end: 16px;
+  background-color: var(--warm-black-soft);
+  text-align: left;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+}
+.servicios__icon {
+  color: var(--just-white);
+}
+.servicios__caracteristica-tittle {
+  margin-block-start: 8px;
+  color: var(--just-white);
+  font-size: 1.8rem;
+}
+.servicios__caracteristica-descripcion {
+  margin-block-start: 8px;
+  color: #808080;
+}
+/* planes */
+.planes {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  padding-block-start: 50px;
+  padding-block-end: 50px;
+  align-items: center;
+  text-align: center;
+  background-color: var(--off-white);
+}
+.planes__text {
+  width: 95%;
+}
+.planes__tittle {
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  color: var(--warm-black);
+}
+.planes__description {
+  margin-block-start: 20px;
+  color: #757575;
+}
+.planes__conteiner-cards {
+  width: 100%;
+  margin-block-start: 20px;
+  padding-block-start: 15px;
+  padding-block-end: 15px;
+  overflow: auto;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+}
+.planes__card {
+  position: relative;
+  display: inline-block;
+  width: 56%;
+  max-width: 255px;
+  margin-inline-end: 6px;
+  padding: 12px;
+  padding-block-end: 20px;
+  padding-block-start: 30px;
+  white-space: normal;
+  background-color: var(--just-white);
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  scroll-snap-align: center;
+}
+
+.planes__card:first-of-type {
+  margin-inline-start: 50%;
+}
+.planes__card:last-of-type {
+  margin-inline-end: 50%;
+}
+.planes__recomendado {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  padding: 6px;
+  font-family: var(--fuente-secundaria);
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  border-radius: 8px;
+  color: var(--just-white);
+  transform: translate(-50%);
+  background-color: var(--bitcoin-orange);
+}
+.planes__card-tittle {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 500;
+}
+.planes__price {
+  margin-block-start: 16px;
+  font-family: var(--fuente-secundaria);
+  font-size: 5.2rem;
+  line-height: 4rem;
+  font-weight: 700;
+}
+.planes__sign-dollar {
+  display: inline-block;
+  margin-inline-end: 5px;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  vertical-align: top;
+}
+.planes__card-description {
+  margin-block-start: 14px;
+  color: #757575;
+  font-size: 1.2rem;
+}
+.planes__buttom {
+  padding: 16px;
+  margin-block-start: 16px;
+  padding-block-start: 14px;
+  padding-block-end: 14px;
+  font-weight: 700;
+  background-color: #faf8f7;
+  border: 2px solid var(--bitcoin-orange);
+  border-radius: 4px;
+}
+.arrow-right {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  background-image: url(../assets/icons/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  vertical-align: middle;
+}

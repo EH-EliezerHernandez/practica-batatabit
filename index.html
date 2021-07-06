@@ -1,18 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Venta de criptomonedas" />
     <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="css/normalize.css  " />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="css/tablet.css"
+      media="screen and (min-width: 768px)"
+    />
+    <link
+      rel="stylesheet"
+      href="css/laptop.css"
+      media="screen and (min-width:720px)"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@500;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
     <header class="header">
-        <figure>
-            <img src="./assets/img/logo-batatabit.png" alt="Logo Batatabit">
+      <div class="header__contenido">
+        <figure class="header__contenedor-logo">
+          <img
+            src="./assets/img/logo-batatabit.png"
+            class="logo-batatabit"
+            alt="Logo Batatabit"
+          />
         </figure>
-        <h1 class="header__tittle">La Próxima revolución en el intercambio de criptomonedas.</h1>
-        <p class="header__descripcion">Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</p>
+        <h1 class="header__tittle">
+          La Próxima revolución en el intercambio de criptomonedas.
+        </h1>
+        <p class="header__description">
+          Batatabit te ayuda a navegar entre los diferentes precios y
+          tendencias.
+        </p>
+      </div>
+      <a href="#plans" class="buttom-planes"
+        >Conoce Nuestros Planes <span class="icon-arrow-down"></span
+      ></a>
     </header>
-</body>
+    <!-- header -->
+    <section class="tasas-cambio">
+      <div class="tasas__contenedor">
+        <div class="tasas-cambio__background-bitcoin"></div>
+        <h2 class="tasas-cambio__tittle">
+          Visualizamos todas las tasas de cambio.
+        </h2>
+        <p class="tasas-cambio__description">
+          Traemos información en tiempo real de las casas de cambio y las
+          monedas más importantes del mundo.
+        </p>
+        <div class="tasas__contenedor-tables">
+          <article class="tasas">
+            <h3 class="tasas__tittle tasas__tittle--orange">Monedas</h3>
+            <div class="tasas__table">
+              <p class="tasas__label">Bitcoin</p>
+              <p class="tasas__price">
+                $ 1.96 <span class="tasas__icon tasas__icon--down"></span>
+              </p>
+              <p class="tasas__label">Ethereum</p>
+              <p class="tasas__price">
+                $ 0.07 <span class="tasas__icon tasas__icon--up"></span>
+              </p>
+              <p class="tasas__label">Ripple</p>
+              <p class="tasas__price">
+                $ 2.15 <span class="tasas__icon tasas__icon--down"></span>
+              </p>
+              <p class="tasas__label">Stellar</p>
+              <p class="tasas__price">
+                $ 4.96 <span class="tasas__icon tasas__icon--down"></span>
+              </p>
+            </div>
+            <p class="tasas__update tasas__update--orange">
+              <span class="tasas__update-label">Actualizado:</span> 19 Julio
+              23:45
+            </p>
+          </article>
+          <!-- tasas -->
+          <article class="tasas">
+            <h3 class="tasas__tittle tasas__tittle--blue">Comisiones</h3>
+            <div class="tasas__table">
+              <p class="tasas__label">Bitcoin</p>
+              <p class="tasas__price">$ 1.96</p>
+              <p class="tasas__label">Ethereum</p>
+              <p class="tasas__price">$ 0.07</p>
+              <p class="tasas__label">Ripple</p>
+              <p class="tasas__price">$ 2.15</p>
+              <p class="tasas__label">Stellar</p>
+              <p class="tasas__price">$ 4.96</p>
+            </div>
+            <p class="tasas__update tasas__update--blue">
+              <span class="tasas__update-label">Actualizado:</span> 19 Julio
+              23:45
+            </p>
+          </article>
+          <!-- tasas -->
+        </div>
+      </div>
+    </section>
+    <!-- tasas-cambio -->
+    <section class="servicios">
+      <div class="icono-batatabit"></div>
+      <div class="servicios__contenido">
+        <h2 class="servicios__tittle">Creamos un producto sin comparación.</h2>
+        <p class="servicios__description">
+          Confiable y diseñado para su uso diario.
+        </p>
+        <div class="servicios__conteiner">
+          <section class="servicios__caracteristica">
+            <img
+              src="./assets/icons/clock.svg"
+              loading="lazy"
+              class="servicios__icon servicios__icon--clock"
+              alt="Icono de reloj"
+            />
+            <h3 class="servicios__caracteristica-tittle">Tiempo real</h3>
+            <p class="servicios__caracteristica-descripcion">
+              Nuestro API toma información minuto a minuto sobre las tasas que
+              más determinan el comportamiento.
+            </p>
+          </section>
+          <!-- servicios__caracteristica -->
+          <section class="servicios__caracteristica">
+            <img
+              loading="lazy"
+              src="./assets/icons/eye.svg"
+              class="servicios__icon servicios__icon--eye"
+              alt="Icono de no hay tasas escondidas"
+            />
+            <h3 class="servicios__caracteristica-tittle">
+              No hay tasas escondidas
+            </h3>
+            <p class="servicios__caracteristica-descripcion">
+              Ni en la compra o al momento de exit, Batabit siempre te muestra
+              el costo real de lo que estás adquiriendo.
+            </p>
+          </section>
+          <!-- servicios__caracteristica -->
+          <section class="servicios__caracteristica">
+            <img
+              loading="lazy"
+              src="./assets/icons/dollar-sign.svg"
+              class="servicios__icon servicios__icon--dollar"
+              alt="Icono de compara monedas"
+            />
+            <h3 class="servicios__caracteristica-tittle">Compara monedas</h3>
+            <p class="servicios__caracteristica-descripcion">
+              No más rumores, con Babtabit sabrás el valor real de cada moneda
+              en el mercado actual.
+            </p>
+          </section>
+          <!-- servicios__caracteristica -->
+          <section class="servicios__caracteristica">
+            <img
+              loading="lazy"
+              src="./assets/icons/check-circle.svg"
+              class="servicios__icon servicios__icon--check"
+              alt="Icono de informacion confiable"
+            />
+            <h3 class="servicios__caracteristica-tittle">
+              Información confiable
+            </h3>
+            <p class="servicios__caracteristica-descripcion">
+              Nuestras fuentes están 100% verificadas y continuamos auditando su
+              contenido mientras se actualizan.
+            </p>
+          </section>
+          <!-- servicios__caracteristica -->
+        </div>
+      </div>
+    </section>
+    <!-- servicios -->
+    <section class="planes" id="plans">
+      <div class="planes__text">
+        <h2 class="planes__tittle">Escoge el plan que mejor se ajuste a ti.</h2>
+        <p class="planes__description">
+          Cualquier plan te da acceso completo a nuestra plataforma.
+        </p>
+      </div>
+      <div class="planes__conteiner-cards">
+        <section class="planes__card">
+          <h3 class="planes__card-tittle">Pago Anual</h3>
+          <p class="planes__price">
+            <span class="planes__sign-dollar">$</span>99
+          </p>
+          <p class="planes__card-description">
+            *Ahorras $129 comparado al plan mensual.
+          </p>
+          <button class="planes__buttom">
+            <p>Escoger este <span class="arrow-right"></span></p>
+          </button>
+          <!-- planes__card -->
+        </section>
+        <section class="planes__card">
+          <p class="planes__recomendado">Recomendado</p>
+          <h3 class="planes__card-tittle">Pago Anual</h3>
+          <p class="planes__price">
+            <span class="planes__sign-dollar">$</span>99
+          </p>
+          <p class="planes__card-description">
+            *Ahorras $129 comparado al plan mensual.
+          </p>
+          <button class="planes__buttom">
+            <p>Escoger este <span class="arrow-right"></span></p>
+          </button>
+        </section>
+        <!-- planes__card -->
+        <section class="planes__card">
+          <h3 class="planes__card-tittle">Pago Anual</h3>
+          <p class="planes__price">
+            <span class="planes__sign-dollar">$</span>99
+          </p>
+          <p class="planes__card-description">
+            *Ahorras $129 comparado al plan mensual.
+          </p>
+          <button class="planes__buttom">
+            <p>Escoger este <span class="arrow-right"></span></p>
+          </button>
+        </section>
+        <!-- planes__card -->
+      </div>
+    </section>
+    <!-- plans -->
+  </body>
 </html>
